@@ -52,7 +52,7 @@
 			${time.years !== 0 ? time.years + ' år<br>' : '' }
 			${time.months !== 0 ? (time.months == 1 ? time.months + ' månad<br>' : time.months + ' månader<br>') : ''}
 			${time.days >= 7 ? (Math.floor(time.days / 7) == 1 ? Math.floor(time.days / 7) + ' vecka<br>' : Math.floor(time.days / 7) + ' veckor<br>') : ''}
-			${time.days % 7 !== 0 ? Math.floor(time.days % 7) + ' dagar<br>' : ''}
+			${time.days % 7 !== 0 ? (Math.floor(time.days % 1) === 1 ? Math.floor(time.days % 7) + ' dag<br>' : Math.floor(time.days % 7) + ' dagar<br>') : ''}
 		`;
 		return timeStr.substring(0, timeStr.length - 7);
 	}
@@ -108,4 +108,8 @@
 		font-size: 3em;
 		text-align: center;
 	}
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> gh-pages
