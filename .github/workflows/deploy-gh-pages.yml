@@ -23,5 +23,5 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}
       - name: Run deploy script
         run: |
-          git config user.name "$NAME" && git config user.email "$EMAIL"
+          git config user.name "Tobias Wadseth" && git config user.email "twadseth@icloud.com"
           npm run gh-pages-deploy
