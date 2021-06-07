@@ -108,8 +108,4 @@
 		font-size: 3em;
 		text-align: center;
 	}
-<<<<<<< HEAD
 </style>
-=======
-</style>
->>>>>>> gh-pages
